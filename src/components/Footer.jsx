@@ -31,14 +31,14 @@ function Footer() {
     return (
         <footer className="bg-gray-900 border-t border-gray-800">
             <div className="max-w-7xl mx-auto px-6 py-12">
-                <div className="grid grid-cols-4 gap-8 mb-8">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
                     {sections.map((section, index) => (
                         <div key={index}>
-                            <h4 className="font-semibold mb-4">{section.title}</h4>
-                            <ul className="space-y-2 text-sm text-gray-400">
+                            <h4 className="font-semibold mb-4 text-sm md:text-base">{section.title}</h4>
+                            <ul className="space-y-2 text-xs md:text-sm text-gray-400">
                                 {section.links.map((link, linkIndex) => (
                                     <li key={linkIndex}>
-                                        <a href="#" className="hover:text-white cursor-pointer">{link}</a>
+                                        <a href="#" className="hover:text-white cursor-pointer transition-colors">{link}</a>
                                     </li>
                                 ))}
                             </ul>

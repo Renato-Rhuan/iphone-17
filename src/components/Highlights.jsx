@@ -4,28 +4,28 @@ function Highlights() {
             <div className="max-w-7xl mx-auto">
                 {/* Seção de título */}
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-bold mb-4">Design revolucionário</h2>
-                    <p className="text-xl text-gray-400">Cada detalhe foi pensado para criar a melhor experiência</p>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Design revolucionário</h2>
+                    <p className="text-lg md:text-xl text-gray-400">Cada detalhe foi pensado para criar a melhor experiência</p>
                 </div>
 
                 {/* Grid de 2 colunas para Titânio e iOS */}
-                <div className="grid grid-cols-2 gap-8 mb-16">
-                    <div className="bg-gray-900 rounded-3xl p-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div className="bg-gray-900 rounded-3xl p-6 md:p-8">
                         <img className="w-full rounded-2xl mb-4" src="/img/titanium-design.jpg" alt="iphone-titanium" />
-                        <h3 className="font-bold mb-2 text-3xl">Titânio Premium</h3>
+                        <h3 className="font-bold mb-2 text-2xl md:text-3xl">Titânio Premium</h3>
                         <p className="text-gray-300">Estrutura em titânio de grau aeroespacial. O smartphone mais forte e leve.</p>
                     </div>
 
-                    <div className="bg-gray-900 rounded-3xl p-8">
+                    <div className="bg-gray-900 rounded-3xl p-6 md:p-8">
                         <img className="w-full rounded-2xl mb-4" src="/img/Iphone 17 Pro Max.jpg" alt="ios 2025" />
-                        <h3 className="font-bold mb-2 text-3xl">iOS 26</h3>
+                        <h3 className="font-bold mb-2 text-2xl md:text-3xl">iOS 26</h3>
                         <p className="text-gray-300">O sistema operacional mais avançado do mundo com IA integrada.</p>
                     </div>
                 </div>
 
                 {/* Seção A18 Pro */}
-                <div className="bg-gray-900 rounded-3xl p-12 mb-16" id="performance">
-                    <h3 className="text-4xl font-bold mb-6 text-gradient">A18 Pro</h3>
+                <div className="bg-gray-900 rounded-3xl p-6 md:p-12 mb-16" id="performance">
+                    <h3 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">A18 Pro</h3>
                     <p className="text-gray-300 mb-6">O chip mais poderoso em um smartphone</p>
                     <img className="w-full rounded-2xl mb-4" src="/img/iPhone 17 .jpg" alt="chip a18" />
                     <ul className="space-y-3 text-gray-300">
@@ -38,16 +38,16 @@ function Highlights() {
 
                 {/* Seção de Câmera */}
                 <div id="camera">
-                    <h3 className="text-4xl font-bold mb-10 text-center">Sistema de câmera Pro avançado</h3>
-                    <div className="grid grid-cols-3 gap-6">
-                        <div className="bg-gray-900 rounded-2xl p-8 hover:scale-105 cursor-pointer transition-all duration-300">
-                            <div className="text-4xl font-bold text-blue-600 mb-4">48MP</div>
-                            <h4 className="text-xl font-semibold mb-2">Principal</h4>
+                    <h3 className="text-2xl md:text-4xl font-bold mb-10 text-center">Sistema de câmera Pro avançado</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="bg-gray-900 rounded-2xl p-6 md:p-8 hover:scale-105 cursor-pointer transition-all duration-300">
+                            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">48MP</div>
+                            <h4 className="text-lg md:text-xl font-semibold mb-2">Principal</h4>
                             <p className="text-gray-400">Sensor quad-pixel com foco automático</p>
                         </div>
 
-                        <div className="bg-gray-900 rounded-2xl p-8 hover:scale-105 cursor-pointer transition-all duration-300">
-                            <div className="text-4xl font-bold text-orange-500 mb-4">12MP</div>
+                        <div className="bg-gray-900 rounded-2xl p-6 md:p-8 hover:scale-105 cursor-pointer transition-all duration-300">
+                            <div className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">12MP</div>
                             <h4 className="text-xl font-semibold mb-2">Ultra Wide</h4>
                             <p className="text-gray-400">Campo de visão de 120° com modo noturno</p>
                         </div>

@@ -15,39 +15,39 @@ function Colors() {
     const [selectedColor, setSelectedColor] = useState('blue');
 
     return (
-        <section id="colors" className="bg-black py-20 px-8">
+        <section id="colors" className="bg-black py-20 px-6 md:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl mb:text-6xl font-bold mb-4">Escolha sua cor</h2>
-                    <p className="text-xl text-gray-400">Tres acabamentos em titânio lindos</p>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Escolha sua cor</h2>
+                    <p className="text-lg md:text-xl text-gray-400">Três acabamentos em titânio lindos</p>
                 </div>
 
                 <div className="flex justify-center mb-12">
                     <div className="relative w-full max-w-3xl">
-                        <div className="relative flex items-center justify-center min-h-[500px]">
-                            <img src={colors.find( color => color.id === selectedColor).image} alt="iphone 17" className="max-w-full max-h-[600px] mx-auto"/>
+                        <div className="relative flex items-center justify-center min-h-[400px] md:min-h-[500px]">
+                            <img src={colors.find( color => color.id === selectedColor).image} alt="iphone 17" className="max-w-full max-h-[500px] md:max-h-[600px] mx-auto"/>
                         </div>
 
-                        <div className="absolute bottom-8 left-0 right-0 text-center">
-                            <div className="px-8 py-4 rounded-full backdrop-blur-md bg-black/40 inline-block">
-                                <h3 className="text-2xl font-semibold">{colors.find(color => color.id === selectedColor).name}</h3>
+                        <div className="absolute bottom-4 md:bottom-8 left-0 right-0 text-center">
+                            <div className="px-6 md:px-8 py-3 md:py-4 rounded-full backdrop-blur-md bg-black/40 inline-block">
+                                <h3 className="text-lg md:text-2xl font-semibold">{colors.find(color => color.id === selectedColor).name}</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center gap-4">
+                <div className="flex justify-center items-center gap-4 mb-12">
                     {colors.map( color => (
-                        <button 
-                        key={color.id} 
+                        <button
+                        key={color.id}
                         onClick={() => setSelectedColor(color.id)}
                         className={`relative transition-all duration-300 cursor-pointer`}>
-                            <div className={`w-16 h-16 rounded-full border-4 ${color.colorClass} ${selectedColor === color.id ? 'border-white' : 'border-gray-600'}`}> </div>
+                            <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full border-4 ${color.colorClass} ${selectedColor === color.id ? 'border-white' : 'border-gray-600'}`}> </div>
                         </button>
                     ))}
                 </div>
 
-                <div className="grid gap-8 mt-20 grid-cols-2">
+                <div className="grid gap-8 mt-20 grid-cols-1 md:grid-cols-2">
                     {models.map((model, index) => (
                         <div key={index} className="bg-gradient-to-br from-gray-900 to-transparent rounded-3xl p-8 border border-gray-800">
                             <div className="text-4xl mb-4">📱</div>
