@@ -2,7 +2,7 @@
 
 Uma landing page moderna e responsiva apresentando o iPhone 17, construída com React, Vite e Tailwind CSS. O site destaca as principais características do dispositivo, incluindo design em titânio, câmera avançada, performance excepcional e opções de cores.
 
-![iPhone 17 Preview](public/img/iPhone-17-Pro.jpg)
+
 
 ## ✨ Características
 
